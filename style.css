@@ -1,3 +1,6 @@
 body {
     background-image: url('img01.jpg');
+    background-repeat: no-repeat;
+    backgrond-attachment: fixed;
+    background-size: 50%
 }
