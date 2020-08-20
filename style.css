@@ -1,7 +1,14 @@
+img {
+    height:100px;
+    width:200px;
+}
+
 h1 {
-    color:black;
+    color:white;
     text-align:center;
-    background-color:yellow;
+    background-color:black;
+}
+
 body {
     text-align:left;
     background-color: black;
