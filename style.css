@@ -1,12 +1,12 @@
 img {
-    height:100px;
+    height:110px;
     width:200px;
 }
 
 h1 {
-    color:white;
+    color:black;
     text-align:center;
-    background-color:black;
+    background-color:white;
 }
 
 body {
