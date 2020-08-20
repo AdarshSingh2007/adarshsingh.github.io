@@ -24,6 +24,11 @@ header .logo
     color: #fff;
     font-size: 30px;
     text-decoration: none;
-    Letter-spacing:2px;
+    letter-spacing:2px;
     font-weight: 700;
+}
+header ul
+{
+    position: relative;
+    display: flex;
 }
