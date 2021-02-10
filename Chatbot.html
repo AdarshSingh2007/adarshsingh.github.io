@@ -1,0 +1,46 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="chatbotdesign.css">
+
+<script>
+know = {
+"hello" : "Hi there!",
+"hi" : "Hello, How are you!",
+"i am fine" : "That's good!",
+"how are you" : "I am Fine",
+"who are you" : "I am a leaning bot 🤖 ",
+"how old are you" : "I am infinity in age",
+"what is your age" : "I don't know 🙄",
+"ok" : "Okay",
+"what can you do" : "I can only chat😝",
+};
+
+function talk() {
+var user = document.getElementById("userBox").value;
+document.getElementById("userBox").value= "";
+document.getElementById("chatLog").innerHTML += "You: " + user+"<br>";
+
+if (user in know) {
+document.getElementById("chatLog").innerHTML += "Bot: " + know[user] + "<br>";
+} else 
+
+{
+document.getElementById("chatLog").innerHTML += "Sorry, I'm still a learning bot 🤖 . (Try to use only small letters and don't use special characters.) <br>";
+}
+}
+</script>
+
+</head>
+
+
+<body>
+
+<p id="chatLog"> - - ChatBot by Adarsh - - <br> </p>
+
+<input id="userBox" type="text" placeholder="Type Something..." onkeydown="if(event.keyCode == 13) {talk()}">
+
+<p id="instructions">Only use lowercase letters and don't use and symbols like . , \ _ &# etc. </p>
+</body>
+
+</html>
