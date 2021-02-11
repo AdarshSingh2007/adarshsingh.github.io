@@ -14,6 +14,12 @@ know = {
 "what is your age" : "I don't know 🙄",
 "ok" : "Okay",
 "what can you do" : "I can only chat😝",
+"hmm" : "What happned ?",
+"what is my name" : "Your name is Adarsh",
+"nothing" : "Ok, Then",
+"what is your name" : "People calls me a bot or robot I don't have a specific name.",
+"my mom name" : "Why, you don't know your own mother name?",
+"no i know" : "You are asking wierd questions",
 };
 
 function talk() {
@@ -35,12 +41,17 @@ document.getElementById("chatLog").innerHTML += "Sorry, I'm still a learning bot
 
 
 <body>
+<script  src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-<p id="chatLog"> - - ChatBot by Adarsh - - <br> </p>
+<h2 id="name"> - - ChatBot by Adarsh - - </h2>
+<h3 id="chatLog">  <br> </h3>
 
-<input id="userBox" type="text" placeholder="Type Something..." onkeydown="if(event.keyCode == 13) {talk()}">
+<input id="userBox" type="text" class="input" placeholder="Type Something..." onkeydown="if(event.keyCode == 13) {talk()}">
 
 <p id="instructions">Only use lowercase letters and don't use and symbols like . , \ _ &# etc. </p>
 </body>
 
 </html>
+
+
+
